@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "935721598017",
+    "firebase_url": "https://facedancerevolution.firebaseio.com",
+    "project_id": "facedancerevolution",
+    "storage_bucket": "facedancerevolution.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935721598017:android:2f80efd1b43f29ba",
+        "android_client_info": {
+          "package_name": "com.askjeffreyliu.facedancerevolution"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935721598017-2l3mutpqjgff5l85rj5t1atmpf2f5678.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.askjeffreyliu.facedancerevolution",
+            "certificate_hash": "fbc26b05df9085682ebfc9d3c88cb5cf8227e040"
+          }
+        },
+        {
+          "client_id": "935721598017-m5246hmn0p6nj52qqaaestguv4bo93i0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvYJfn7ZfUi4uFhZYRi8zBZvQtf9S7DQA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935721598017-m5246hmn0p6nj52qqaaestguv4bo93i0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

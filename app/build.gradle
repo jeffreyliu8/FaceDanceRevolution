@@ -36,4 +36,6 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-ml-vision:18.0.1'
     implementation 'com.google.firebase:firebase-ml-vision-face-model:17.0.2'
+    implementation 'com.orhanobut:logger:2.2.0'
+    implementation 'com.pixplicity.easyprefs:library:1.9.0'
 }

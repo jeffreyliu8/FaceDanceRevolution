@@ -420,7 +420,24 @@ public class Camera2VideoFragment extends Fragment
             if (!mCameraOpenCloseLock.tryAcquire(2500, TimeUnit.MILLISECONDS)) {
                 throw new RuntimeException("Time out waiting to lock camera opening.");
             }
-            String cameraId = manager.getCameraIdList()[0];
+
+            String cameraId = null;
+            if (manager != null) {
+                for (String tempCameraId : manager.getCameraIdList()) {
+                    CameraCharacteristics chars = manager.getCameraCharacteristics(tempCameraId);
+                    Integer characteristic = chars.get(CameraCharacteristics.LENS_FACING);
+                    if (characteristic != null && characteristic == CameraCharacteristics.LENS_FACING_FRONT) {
+                        // This is the one we want.
+                        cameraId = tempCameraId;
+                        break;
+                    }
+                }
+            }
+
+            if (cameraId == null) {
+                Logger.e("no front camera found");
+                return;
+            }
 
             // Choose the sizes for camera preview and video recording
             CameraCharacteristics characteristics = manager.getCameraCharacteristics(cameraId);
